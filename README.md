@@ -1,6 +1,6 @@
 # POM - Page Object Model in Test Automation Scripts
 
-The most common sign your test automation is failing is if you encounter issues with test scripts or test frameworks. In fact, these account for 40% of all issues that DevOps teams face.
+The most common sign your test automation is failing is if you encounter _issues with test scripts or test frameworks. In fact, these account for [40% of all issues]9https://github.com/lana-20/page-object-model/blob/main/the-11-most-common-challenges-in-automated-testing-web.pdf)that DevOps teams face.
 
 Why?
 
