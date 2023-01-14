@@ -1,5 +1,20 @@
 # POM - Page Object Model in Test Automation Scripts
 
+The most common sign your test automation is failing is if you encounter issues with test scripts or test frameworks. In fact, these account for 40% of all issues that DevOps teams face.
+
+Why?
+
+Test script and test framework issues stem from problems with skillsets, culture and processes, and an overall lack of
+communication between testers and developers.
+
+__Issues with Objects__
+
+Particularly problematic to DevOps teams are objects. With object identifiers, too often teams lack the knowledge to
+define the right object being used. This is especially true when dev designs pages featuring multiple objects with the same ID. Two similar objects on the same script are sure to cause issues in automation.
+
+Teams can address this issue head on with the help of a page object model (POM). This design pattern ensures that if
+something changes, it all changes from one place.
+
 The Page Object Model (POM) is a design pattern that is commonly used in test automation with Selenium and other testing frameworks. It is based on the idea of creating a separate class for each page in an application, with the class representing the page's elements and behaviors. The POM pattern helps to improve the maintainability and reliability of test automation by separating the test logic from the implementation details of the application under test.
 
 Here is an example of how the POM pattern might be implemented in a test automation project using Selenium:
