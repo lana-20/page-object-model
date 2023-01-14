@@ -17,6 +17,21 @@ something changes, it all changes from one place.
 
 The Page Object Model (POM) is a design pattern that is commonly used in test automation with Selenium and other testing frameworks. It is based on the idea of creating a separate class for each page in an application, with the class representing the page's elements and behaviors. The POM pattern helps to improve the maintainability and reliability of test automation by separating the test logic from the implementation details of the application under test.
 
+A page object represents an area where the test interacts within the web application user interface.
+
+Benefits of using page object pattern:
+
+- Easy to read test cases
+- Creating reusable code that can share across multiple test cases
+- Reducing the amount of duplicated code
+- If the user interface changes, the fix needs changes in only one place
+
+<img src="https://user-images.githubusercontent.com/70295997/209742408-26f2d12a-cc1e-4c50-9c77-258d60c112ab.png" width=500>
+
+<img src="https://user-images.githubusercontent.com/70295997/209742972-c618ff9b-562d-4803-b5c7-d3ce1715a708.png" width=500>
+
+----
+
 Here is an example of how the POM pattern might be implemented in a test automation project using Selenium:
 
     from selenium import webdriver
@@ -46,23 +61,6 @@ Here is an example of how the POM pattern might be implemented in a test automat
 In this example, the LoginPage class represents the login page of the application, with methods for entering the username and password and clicking the login button. The test logic is separated from the implementation details of the page, making it easier to write and maintain the test code. The POM pattern can be extended to include multiple page classes, each representing a different page in the application. This helps to organize the test code and improve its maintainability and reliability.
 
 ----
-
-A page object represents an area where the test interacts within the web application user interface.
-
-Benefits of using page object pattern:
-
-- Easy to read test cases
-- Creating reusable code that can share across multiple test cases
-- Reducing the amount of duplicated code
-- If the user interface changes, the fix needs changes in only one place
-
-<img src="https://user-images.githubusercontent.com/70295997/209742408-26f2d12a-cc1e-4c50-9c77-258d60c112ab.png" width=500>
-
-<img src="https://user-images.githubusercontent.com/70295997/209742972-c618ff9b-562d-4803-b5c7-d3ce1715a708.png" width=500>
-
-
-----
-
 
 [PageObject by Martin Fowler](https://www.martinfowler.com/bliki/PageObject.html)
 
