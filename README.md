@@ -20,11 +20,13 @@ Test script and test framework issues stem from problems with skillsets, culture
 * One concern - **user intention** - is **what** the user tries to do, what the user sees themselves as doing.
 * The other concern - **implementation** - is **how** the user tried to do it, meaning the precise and specific steps that are necessary for the user to do what they want.
 * The code might not separate separate the concerns and have the **what** and the **how** mixed together.
-* Need a distint separation of concerns to organize the code, make it understandable, and make it reflect the larger reality the tests attempt to model.
-
+* Need a distinct separation of concerns to organize the code, make it understandable, and make it reflect the larger reality the tests attempt to model.
+* Also, a test can take place over two web pages or a mobile views, and nothing in the code may indicate that. 
 
 <img src="https://user-images.githubusercontent.com/70295997/217983297-2bc19e4b-be88-4d51-bdbd-c7bafbb1bb27.png" width=40> ***Duplication***
-* A test can take place over two web pages or a mobile views, and nothing in the code may indicate that. 
+* In 2+ different places, I may find and interact with one or another element. My developer can make changes to the app, such as these elements have different selectors. Then I need to hunt down every place in the testsuite where the current selectors are set, and update them. 
+* In a complex feature with many different testcases all involving the same elements, potentially speading over multiple files, it's a significant pain to find and update all those instances.
+* Also, the code can contain duplicate subsequent **Explicit Wait** <code>wait.until()</code> commands, that take an expected condition. This pattern is rather vervose and makes it hard to see what's actually happening.
 
 
 ----
