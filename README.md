@@ -55,7 +55,7 @@ Benefits of using page object pattern:
 * Construct a model for each page/view that has certain *responsibilites*.
 * Use these objects in the test code, which has a different set of *responsibilties*.
 
-### Page Object - Responsibilities
+### <img src="https://user-images.githubusercontent.com/70295997/218017980-8f609243-c554-48ef-9318-6eaeab1550a4.png" width=40> Page Object - Responsibilities
 * The object is responsible for knowing all about the UI elements for a given page/view.
 * Moreoever, it's responsible for **preventing** anyone else from knowing about them 👉 This pattern in softwate development is know as [***encapsulation***](https://github.com/lana-20/oop-encapsulation).
 * Low-level details about UI elements on a specific page/view are unimportant to anyone outside the page/view. No need to grant access to them.
@@ -68,7 +68,7 @@ Page Object exposes high-level user actions and data via methods or properties o
 
 POM is a model where objects expose high-level user actions to the outside world, while encapsulating knowledge about the action implementation using specific UI elements, that it doesn't share with anyone else.
 
-### Test Case - Responsibilities
+### <img src="https://user-images.githubusercontent.com/70295997/218017640-4d343773-5729-4d38-b4fd-fb7cd3acef80.png" width=40> Test Case - Responsibilities
 * Tests instantiate and use page objects in order to construct user flows at a high level. Testcases never, or rarely, know about the UI elements or access them directly. No need to use the WebDriver session object inside testcases at all. A testcase must define a user flow implementing high-level user actions. Users don't care or know about **drivers**.
 * Make assertions on the state of the app to prove that things work.
    * Implicit Assertions: When navigating through various app pages/views. E.g., if an element doesn't exist the test fails. Hence, moving through a certain flow makes some assertions.
@@ -79,7 +79,7 @@ POM helps implement the desired kind of **separation of concerns**. When using t
 
 ----
 
-Here is a trivial example of how the POM pattern might be implemented in a test automation project using Selenium:
+<img src="https://user-images.githubusercontent.com/70295997/218018298-cdb3d453-69c9-4def-bc0a-55d796698044.png" width=40> Here is a trivial example of how the POM pattern might be implemented in a test automation project using Selenium:
 
     from selenium import webdriver
     from selenium.webdriver.common.by import By
