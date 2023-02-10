@@ -26,8 +26,11 @@ Test script and test framework issues stem from problems with skillsets, culture
 <img src="https://user-images.githubusercontent.com/70295997/217983297-2bc19e4b-be88-4d51-bdbd-c7bafbb1bb27.png" width=40> ***Duplication***
 * In 2+ different places, I may find and interact with one or another element. My developer can make changes to the app, such as these elements have different selectors. Then I need to hunt down every place in the testsuite where the current selectors are set, and update them. 
 * In a complex feature with many different testcases all involving the same elements, potentially speading over multiple files, it's a significant pain to find and update all those instances.
-* Also, the code can contain duplicate subsequent **Explicit Wait** <code>wait.until()</code> commands, that take an expected condition. This pattern is rather vervose and makes it hard to see what's actually happening.
+* Also, the code can contain duplicate subsequent **Explicit Wait** <code>wait.until()</code> commands, that take an expected condition. This pattern is rather verbose and makes it hard to see what's actually happening.
 
+<img src="https://user-images.githubusercontent.com/70295997/217990718-060c8748-901f-4c5e-8469-fe6f178b0fa6.png" width=40> ***Ambiguity***
+* Sometimes, the code is plainly obscure, and it might be hard to tell what it's supposed to do. The script can contain a <code>driver.back()</code> call. It's unclear whether it's meant to navigate back a page/view or trigger any other other behaviors associated with the back button.
+* Comment such parts for team discussion and comprehension.
 
 ----
 Draft/Pending revision or inclusion(?)
