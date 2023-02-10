@@ -59,10 +59,19 @@ Benefits of using page object pattern:
 * The object is responsible for knowing all about the UI elements for a given page/view.
 * Moreoever, it's responsible for **preventing** anyone else from knowing about them 👉 This pattern in softwate development is know as [***encapsulation***](https://github.com/lana-20/oop-encapsulation).
 * Low-level details about UI elements on a specific page/view are unimportant to anyone outside the page/view. No need to grant access to them.
+* ...
+
+
+### Testcases - Responsibilities
+* Instantiate and use page objects in order to construct user flows at a high level. Testcases never, or rarely, know about the UI elements or access them directly. No need to use the WebDriver session object inside testcases at all. A testcase must define a user flow implementing high-level user actions. Users don't care or know about **drivers**.
+* Make assertions on the state of the app to prove that things work.
+   * Implicit Assertions - ...
+   * Explicit Assertions - ...
+
 
 ----
 
-Here is an example of how the POM pattern might be implemented in a test automation project using Selenium:
+Here is a trivial example of how the POM pattern might be implemented in a test automation project using Selenium:
 
     from selenium import webdriver
     from selenium.webdriver.common.by import By
