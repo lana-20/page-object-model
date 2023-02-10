@@ -15,8 +15,16 @@ Test script and test framework issues stem from problems with skillsets, culture
 * Users do **not want/intend** to use UI elements, they **have to** use these elements because that's how apps works. A user's intent is not to _tap a button_ or _type text_, but to accomplish a specific task.
 * Write tests at a level that reflects user intent and experience. Such test are transparent by making it obvious what they try to test.
 
-<img src="https://user-images.githubusercontent.com/70295997/217976055-d3711547-b41b-480e-9399-dfd50b360ac2.png" width=40> S***eparation of Concerns***
+<img src="https://user-images.githubusercontent.com/70295997/217976055-d3711547-b41b-480e-9399-dfd50b360ac2.png" width=40> ***Separation of Concerns***
 * Automation of user-like behavior involves 2 levels - **user intention** and **implementation**.
+* One concern - **user intention** - is **what** the user tries to do, what the user sees themselves as doing.
+* The other concern - **implementation** - is **how** the user tried to do it, meaning the precise and specific steps that are necessary for the user to do what they want.
+* The code might not separate separate the concerns and have the **what** and the **how** mixed together.
+* Need a distint separation of concerns to organize the code, make it understandable, and make it reflect the larger reality the tests attempt to model.
+
+
+<img src="https://user-images.githubusercontent.com/70295997/217983297-2bc19e4b-be88-4d51-bdbd-c7bafbb1bb27.png" width=40> ***Duplication***
+* A test can take place over two web pages or a mobile views, and nothing in the code may indicate that. 
 
 
 ----
