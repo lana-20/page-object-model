@@ -1,8 +1,8 @@
 # <img src="https://user-images.githubusercontent.com/70295997/217977168-b299377a-fcdd-41a6-be7a-ef7328bf496b.png" width=40> Page Object Model in Test Automation Scripts
 
-The most common sign your test automation is failing is if you encounter _issues with test scripts or test frameworks_. In fact, these account for [40% of all issues](https://github.com/lana-20/page-object-model/blob/main/the-11-most-common-challenges-in-automated-testing-web.pdf) that DevOps teams face.
+The most common sign your test ***automation*** is failing is if you encounter ___issues with test scripts or test frameworks___. In fact, these account for [40% of all issues](https://github.com/lana-20/page-object-model/blob/main/the-11-most-common-challenges-in-automated-testing-web.pdf) that DevOps teams face.
 
-Why?
+<img src="https://user-images.githubusercontent.com/70295997/217998000-577fd244-2b72-4c7d-937d-a850289d26f6.png" width=40> Why?
 
 Test script and test framework issues stem from problems with skillsets, culture and processes, and an overall lack of communication between testers and developers.
 
@@ -17,7 +17,7 @@ Test script and test framework issues stem from problems with skillsets, culture
 
 <img src="https://user-images.githubusercontent.com/70295997/217976055-d3711547-b41b-480e-9399-dfd50b360ac2.png" width=40> ***Separation of Concerns***
 
-<img src="https://user-images.githubusercontent.com/70295997/217997494-5385731c-3cf7-4e8c-8abe-dbd167da63da.png" width=500>
+<img src="https://user-images.githubusercontent.com/70295997/217997494-5385731c-3cf7-4e8c-8abe-dbd167da63da.png" width=400>
 
 * Automation of user-like behavior involves 2 levels - **user intention** and **implementation**.
 * One concern - **user intention** - is **what** the user tries to do, what the user sees themselves as doing.
