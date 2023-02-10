@@ -35,22 +35,28 @@ Test script and test framework issues stem from problems with skillsets, culture
 
 ## <img src="https://user-images.githubusercontent.com/70295997/217992251-184a6a61-e427-46bb-b8f1-ce7640ec85ea.png" width=40> Solution
 
-Teams can address this issue head on with the help of a Page Object Model, a.k.a. POM or Pom. This design pattern ensures that if something changes, it all changes from one place.
+Teams can address this issue head on with the help of a **Page Object Model**, a.k.a. POM or Pom. This design pattern ensures that if something changes, it all changes from one place.
 
-The Page Object Model is a design pattern that is commonly used in test automation with Selenium, Appium and other testing frameworks. It is based on the idea of creating a separate class for each page in an application, with the class representing the page's elements and behaviors. The POM pattern helps to improve the maintainability and reliability of test automation by separating the test logic from the implementation details of the application under test.
-
-A page object represents an area where the test interacts within the web application user interface.
+POM is commonly used in automation with Selenium, Appium and other testing frameworks. It is based on the idea of creating a separate class for each page/view in an application, with the class representing the page's elements and behaviors. The POM pattern helps to improve the maintainability and reliability of test automation by separating the test logic from the implementation details of the application under test (AUT).
 
 Benefits of using page object pattern:
+- Easy to read testcases
+- Reusable code that can be shared across multiple testcases
+- Reduction of duplicated code
+- UI changes needs be fixed in only one place
 
-- Easy to read test cases
-- Creating reusable code that can share across multiple test cases
-- Reducing the amount of duplicated code
-- If the user interface changes, the fix needs changes in only one place
+### <img src="https://user-images.githubusercontent.com/70295997/217995742-eb499d19-e8ac-4115-8e26-d2fd2d3ffe94.png" width=40> Page object:
+* Represents an area where the test interacts within the web application user interface.
+    * **Page** = webpage. This pattern was established as a part of web-based UI testing, before the advent of mobile apps. The UIs were all located on different **pages**.
+    * **Object** = software object = class. This means making a model of a given page/view as a software object, e.g, a Python class.
+* Construct a model for each page/view that has certain responsibilites.
+* Use these objects in the test code, which has a different set of responsibilties.
 
 <img src="https://user-images.githubusercontent.com/70295997/209742408-26f2d12a-cc1e-4c50-9c77-258d60c112ab.png" width=500>
 
 <img src="https://user-images.githubusercontent.com/70295997/209742972-c618ff9b-562d-4803-b5c7-d3ce1715a708.png" width=500>
+
+
 
 ----
 
