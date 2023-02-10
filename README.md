@@ -4,18 +4,25 @@ The most common sign your test automation is failing is if you encounter _issues
 
 Why?
 
-Test script and test framework issues stem from problems with skillsets, culture and processes, and an overall lack of
-communication between testers and developers.
+Test script and test framework issues stem from problems with skillsets, culture and processes, and an overall lack of communication between testers and developers.
 
-__Issues with Objects__
+## <img src="https://user-images.githubusercontent.com/70295997/217975286-da48f76d-9ff6-443c-9790-b39b864a5256.png" width=40> Define the **problems** to solve
+<img src="https://user-images.githubusercontent.com/70295997/217975426-d625b031-99b9-4de3-9ede-1747abdd605d.png" width=40> A drawback of an automation script can be that it's hard to tell what user behavior it tries to encode.
+* Might need to read very closely to identify the UI elements being interacted with. Then infer the user behavior out of these interactions. That's backwards!
+* Think about user behavior on a high level. Use the words which describe what the user actually attempts to do, such as "login" or "add item to cart".
+* Users do **not want/intend** to use UI elements, they **have to** use these elements because that's how apps works. A user's intent is not to _tap a button_ or _type text_, but to accomplish a specific task.
+* Write tests at a level that reflects user intent and experience. Such test are transparent by making it obvious what they try to test.
 
-Particularly problematic to DevOps teams are objects. With object identifiers, too often teams lack the knowledge to
-define the right object being used. This is especially true when dev designs pages featuring multiple objects with the same ID. Two similar objects on the same script are sure to cause issues in automation.
+----
+Draft/Pending revision or inclusion(?)
+? Issues with Objects
 
-Teams can address this issue head on with the help of a page object model (POM). This design pattern ensures that if
-something changes, it all changes from one place.
+Particularly problematic to DevOps teams are objects. With object identifiers, too often teams lack the knowledge to define the right object being used. This is especially true when dev designs pages featuring multiple objects with the same ID. Two similar objects on the same script are sure to cause issues in automation.
+____
 
-The Page Object Model (POM) is a design pattern that is commonly used in test automation with Selenium and other testing frameworks. It is based on the idea of creating a separate class for each page in an application, with the class representing the page's elements and behaviors. The POM pattern helps to improve the maintainability and reliability of test automation by separating the test logic from the implementation details of the application under test.
+Teams can address this issue head on with the help of a Page Object Model, a.k.a. POM or Pom. This design pattern ensures that if something changes, it all changes from one place.
+
+The Page Object Model is a design pattern that is commonly used in test automation with Selenium, Appium and other testing frameworks. It is based on the idea of creating a separate class for each page in an application, with the class representing the page's elements and behaviors. The POM pattern helps to improve the maintainability and reliability of test automation by separating the test logic from the implementation details of the application under test.
 
 A page object represents an area where the test interacts within the web application user interface.
 
