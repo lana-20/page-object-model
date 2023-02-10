@@ -1,4 +1,4 @@
-# POM - Page Object Model in Test Automation Scripts
+# <img src="https://user-images.githubusercontent.com/70295997/217977168-b299377a-fcdd-41a6-be7a-ef7328bf496b.png" width=40> Page Object Model in Test Automation Scripts
 
 The most common sign your test automation is failing is if you encounter _issues with test scripts or test frameworks_. In fact, these account for [40% of all issues](https://github.com/lana-20/page-object-model/blob/main/the-11-most-common-challenges-in-automated-testing-web.pdf) that DevOps teams face.
 
@@ -6,12 +6,18 @@ Why?
 
 Test script and test framework issues stem from problems with skillsets, culture and processes, and an overall lack of communication between testers and developers.
 
-## <img src="https://user-images.githubusercontent.com/70295997/217975286-da48f76d-9ff6-443c-9790-b39b864a5256.png" width=40> Define the **problems** to solve
-<img src="https://user-images.githubusercontent.com/70295997/217975426-d625b031-99b9-4de3-9ede-1747abdd605d.png" width=40> A drawback of an automation script can be that it's hard to tell what user behavior it tries to encode.
+## <img src="https://user-images.githubusercontent.com/70295997/217975286-da48f76d-9ff6-443c-9790-b39b864a5256.png" width=40> Define the problems to solve
+
+<img src="https://user-images.githubusercontent.com/70295997/217975426-d625b031-99b9-4de3-9ede-1747abdd605d.png" width=40> ***Readability***
+* A drawback of an automation script can be that it's hard to tell what user behavior it tries to encode.
 * Might need to read very closely to identify the UI elements being interacted with. Then infer the user behavior out of these interactions. That's backwards!
 * Think about user behavior on a high level. Use the words which describe what the user actually attempts to do, such as "login" or "add item to cart".
 * Users do **not want/intend** to use UI elements, they **have to** use these elements because that's how apps works. A user's intent is not to _tap a button_ or _type text_, but to accomplish a specific task.
 * Write tests at a level that reflects user intent and experience. Such test are transparent by making it obvious what they try to test.
+
+<img src="https://user-images.githubusercontent.com/70295997/217976055-d3711547-b41b-480e-9399-dfd50b360ac2.png" width=40> S***eparation of Concerns***
+* Automation of user-like behavior involves 2 levels - **user intention** and **implementation**.
+
 
 ----
 Draft/Pending revision or inclusion(?)
