@@ -16,6 +16,9 @@ Test script and test framework issues stem from problems with skillsets, culture
 * Write tests at a level that reflects user intent and experience. Such test are transparent by making it obvious what they try to test.
 
 <img src="https://user-images.githubusercontent.com/70295997/217976055-d3711547-b41b-480e-9399-dfd50b360ac2.png" width=40> ***Separation of Concerns***
+
+<img src="https://user-images.githubusercontent.com/70295997/217997494-5385731c-3cf7-4e8c-8abe-dbd167da63da.png" width=500>
+
 * Automation of user-like behavior involves 2 levels - **user intention** and **implementation**.
 * One concern - **user intention** - is **what** the user tries to do, what the user sees themselves as doing.
 * The other concern - **implementation** - is **how** the user tried to do it, meaning the precise and specific steps that are necessary for the user to do what they want.
@@ -51,11 +54,6 @@ Benefits of using page object pattern:
     * **Object** = software object = class. This means making a model of a given page/view as a software object, e.g, a Python class.
 * Construct a model for each page/view that has certain responsibilites.
 * Use these objects in the test code, which has a different set of responsibilties.
-
-<img src="https://user-images.githubusercontent.com/70295997/209742408-26f2d12a-cc1e-4c50-9c77-258d60c112ab.png" width=500>
-
-<img src="https://user-images.githubusercontent.com/70295997/209742972-c618ff9b-562d-4803-b5c7-d3ce1715a708.png" width=500>
-
 
 
 ----
