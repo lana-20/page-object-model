@@ -6,7 +6,7 @@ Why?
 
 Test script and test framework issues stem from problems with skillsets, culture and processes, and an overall lack of communication between testers and developers.
 
-## <img src="https://user-images.githubusercontent.com/70295997/217991104-55be6e30-d0c5-419e-a29e-623dcef57c7b.png" width=40> Define the problems to solve
+## <img src="https://user-images.githubusercontent.com/70295997/217991104-55be6e30-d0c5-419e-a29e-623dcef57c7b.png" width=40> Problems
 
 <img src="https://user-images.githubusercontent.com/70295997/217975426-d625b031-99b9-4de3-9ede-1747abdd605d.png" width=40> ***Readability***
 * A drawback of an automation script can be that it's hard to tell what user behavior it tries to encode.
@@ -26,18 +26,14 @@ Test script and test framework issues stem from problems with skillsets, culture
 <img src="https://user-images.githubusercontent.com/70295997/217983297-2bc19e4b-be88-4d51-bdbd-c7bafbb1bb27.png" width=40> ***Duplication***
 * In 2+ different places, I may find and interact with one or another element. My developer can make changes to the app, such as these elements have different selectors. Then I need to hunt down every place in the testsuite where the current selectors are set, and update them. 
 * In a complex feature with many different testcases all involving the same elements, potentially speading over multiple files, it's a significant pain to find and update all those instances.
-* Also, the code can contain duplicate subsequent **Explicit Wait** <code>wait.until()</code> commands, that take an expected condition. This pattern is rather verbose and makes it hard to see what's actually happening.
+* Element locators, a.k.a. object identifiers, can be particularly problematic to DevOps. Often the team lacks the knowledge to define the right element/object being used. A developer might design pages/views featuring multiple elements/objects with the same Id. 2 similar elements/objects in the same script cause issues in automation.
+* Furthermore, the code can contain duplicate subsequent **Explicit Wait** <code>wait.until()</code> commands, that take an expected condition. This pattern is rather verbose and makes it hard to see what's actually happening.
 
 <img src="https://user-images.githubusercontent.com/70295997/217990718-060c8748-901f-4c5e-8469-fe6f178b0fa6.png" width=40> ***Ambiguity***
 * Sometimes, the code is plainly obscure, and it might be hard to tell what it's supposed to do. The script can contain a <code>driver.back()</code> call. It's unclear whether it's meant to navigate back a page/view or trigger any other other behaviors associated with the back button.
 * Comment such parts for team discussion and comprehension.
 
-----
-Draft/Pending revision or inclusion(?)
-? Issues with Objects
-
-Particularly problematic to DevOps teams are objects. With object identifiers, too often teams lack the knowledge to define the right object being used. This is especially true when dev designs pages featuring multiple objects with the same ID. Two similar objects on the same script are sure to cause issues in automation.
-____
+## <img src="https://user-images.githubusercontent.com/70295997/217992251-184a6a61-e427-46bb-b8f1-ce7640ec85ea.png" width=40> Solution
 
 Teams can address this issue head on with the help of a Page Object Model, a.k.a. POM or Pom. This design pattern ensures that if something changes, it all changes from one place.
 
