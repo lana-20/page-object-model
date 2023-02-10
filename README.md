@@ -6,7 +6,7 @@ Why?
 
 Test script and test framework issues stem from problems with skillsets, culture and processes, and an overall lack of communication between testers and developers.
 
-## <img src="https://user-images.githubusercontent.com/70295997/217975286-da48f76d-9ff6-443c-9790-b39b864a5256.png" width=40> Define the problems to solve
+## <img src="https://user-images.githubusercontent.com/70295997/217991104-55be6e30-d0c5-419e-a29e-623dcef57c7b.png" width=40> Define the problems to solve
 
 <img src="https://user-images.githubusercontent.com/70295997/217975426-d625b031-99b9-4de3-9ede-1747abdd605d.png" width=40> ***Readability***
 * A drawback of an automation script can be that it's hard to tell what user behavior it tries to encode.
