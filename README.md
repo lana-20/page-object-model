@@ -1,4 +1,4 @@
-# <img src="https://user-images.githubusercontent.com/70295997/217977168-b299377a-fcdd-41a6-be7a-ef7328bf496b.png" width=40> Page Object Model in Test Automation Scripts
+# <img src="https://user-images.githubusercontent.com/70295997/217977168-b299377a-fcdd-41a6-be7a-ef7328bf496b.png" width=40><img src="https://user-images.githubusercontent.com/70295997/217999210-749e2280-b4c1-4ef5-9704-59783fc19267.png" width=40> Page Object Model in Test Automation Scripts
 
 The most common sign your test ***automation*** is failing is if you encounter ___issues with test scripts or test frameworks___. In fact, these account for [40% of all issues](https://github.com/lana-20/page-object-model/blob/main/the-11-most-common-challenges-in-automated-testing-web.pdf) that DevOps teams face.
 
@@ -48,13 +48,17 @@ Benefits of using page object pattern:
 - Reduction of duplicated code
 - UI changes needs be fixed in only one place
 
-### <img src="https://user-images.githubusercontent.com/70295997/217995742-eb499d19-e8ac-4115-8e26-d2fd2d3ffe94.png" width=40> Page object:
+### <img src="https://user-images.githubusercontent.com/70295997/217995742-eb499d19-e8ac-4115-8e26-d2fd2d3ffe94.png" width=40> Page Object
 * Represents an area where the test interacts within the web/mobile app UI.
-    * **Page** = webpage. This pattern was established as a part of web-based UI testing, before the advent of mobile apps. The UIs were all located on different **pages**.
+    * **Page** = webpage. This pattern was established as a part of web-based UI testing, before the advent of mobile app views. The UIs were all located on different **pages**.
     * **Object** = software object = class. This means making a model of a given page/view as a software object, e.g, a Python class.
 * Construct a model for each page/view that has certain responsibilites.
 * Use these objects in the test code, which has a different set of responsibilties.
 
+### Page Object - Responsibilities
+* The object is responsible for knowing all about the UI elements for a given page/view.
+* Moreoever, it's responsible for **preventing** anyone else from knowing about them 👉 This pattern in softwate development is know as [***encapsulation***](https://github.com/lana-20/oop-encapsulation).
+* Low-level details about UI elements on a specific page/view are unimportant to anyone outside the page/view. No need to grant access to them.
 
 ----
 
