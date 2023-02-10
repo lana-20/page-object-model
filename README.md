@@ -75,11 +75,11 @@ POM is a model where objects expose high-level user actions to the outside world
    * Explicit Assertions: When retrieving some info from the page/view and using the <code>assert</code> keyword to verify the app behaves as expected.
 
 ## ∴ Conclusion
-POM helps implement the desired kind of **separation of concerns**. When using the model correctly, the test code becomes highly **readable** and **reusable**, and the automation code gets **encapsulated** in the natural groupings of page objects. **Duplication is discouraged** because ① different tests use the same page object actions which are exposed, and because ② the page objects themselves treat UI element selectors as data, and I can place them at the top of their file.
+<img src="https://user-images.githubusercontent.com/70295997/218019502-bc61a875-0ed8-43c3-93f6-ba5ab96e9d8d.png" width=40> POM helps implement the desired kind of **separation of concerns**. When using the model correctly, the test code becomes highly **readable** and **reusable**, and the automation code gets **encapsulated** in the natural groupings of page objects. **Duplication is discouraged** because ① different tests use the same page object actions which are exposed, and because ② the page objects themselves treat UI element selectors as data, and I can place them at the top of their file.
 
 ----
 
-<img src="https://user-images.githubusercontent.com/70295997/218018298-cdb3d453-69c9-4def-bc0a-55d796698044.png" width=40> Here is a trivial example of how the POM pattern might be implemented in a test automation project using Selenium:
+<img src="https://user-images.githubusercontent.com/70295997/218018298-cdb3d453-69c9-4def-bc0a-55d796698044.png" width=40> Here is a rudimentary example of how the POM pattern might be implemented in a test automation project using Selenium:
 
     from selenium import webdriver
     from selenium.webdriver.common.by import By
