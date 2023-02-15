@@ -110,7 +110,7 @@ In this example, the LoginPage class represents the login page of the app, with 
 ----
 
 Below captioned is a high-level overview of how POM can work locally and remotely, considering the parallel test execution:
-<img width="1848" src="https://user-images.githubusercontent.com/70295997/219174555-d7ce1ad2-c4cd-41c9-844a-bdb752f9c1e7.png">
+<img width="1848" src="https://user-images.githubusercontent.com/70295997/219176200-5bd4daec-8adb-482a-a378-648f321baace.png">
 
 ----
 
