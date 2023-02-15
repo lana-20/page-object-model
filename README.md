@@ -109,6 +109,11 @@ In this example, the LoginPage class represents the login page of the app, with 
 
 ----
 
+Below captioned is a high-level overview of how POM can work locally and remotely, considering the parallel test execution:
+<img width="1848" src="https://user-images.githubusercontent.com/70295997/219174555-d7ce1ad2-c4cd-41c9-844a-bdb752f9c1e7.png">
+
+----
+
 [PageObject by Martin Fowler](https://www.martinfowler.com/bliki/PageObject.html)
 
 [Page Object Model and Page Factory in Selenium](https://www.browserstack.com/guide/page-object-model-in-selenium)
@@ -116,6 +121,8 @@ In this example, the LoginPage class represents the login page of the app, with 
 [Page object models](https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models/)
 
 [Page Objects](https://selenium-python.readthedocs.io/page-objects.html)
+
+[POM High Level Design Diagram](https://miro.com/app/board/uXjVPmtrhio=/?share_link_id=411330205)
 
 
 
